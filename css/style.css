@@ -10,6 +10,17 @@ font-family: 'Merriweather', serif; **/
     box-sizing: border-box;
 }
 
+/* APLICAMOS TRANSICION */
+
+@media (hover: hover) {
+    .transicion :hover {
+        padding: 5px;
+        border: 2px white solid;
+        color: #1c6ab8;
+    }
+}
+
+
 /*EMPEZAMOS CON MOBILE FIRST*/
 
 body { 
