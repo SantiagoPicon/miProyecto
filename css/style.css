@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap');
+/** MIS FUENTES
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif; **/
+/* paleta de color */ 
+/*#9CB4CC*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*EMPEZAMOS CON MOBILE FIRST*/
+
+body { 
+    background-color: #e0efff
+}
+
+nav {
+    text-align: center;
+}
+.nombre{
+    font-size: 1em;
+}
+nav ul {
+    list-style-type: none;
+    font-size: 10px;
+}
+ul li{
+    display: inline;
+}
+li a {
+    text-decoration: none;
+}
+
+.barraNav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.principal {
+    font-size: 0.5em;
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* declaramos el area */
+
+
+.hIndex {
+    grid-area: header;
+}
+.principal {
+    grid-area: main;
+}
+.fIndex {
+    grid-area: footer;
+}
+
+.grillaGeneral {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.contenedorSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+@media (min-width:500px){
+    header {
+    background-color: #b0d7ff9a;
+    }
+    .barraNav{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        border-bottom: 2px solid gray;
+    
+    }
+    .nombre {
+        font-size: 22px;
+    }
+    .contenedorSection {
+        margin-top: 10px;
+    }
+    footer {
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .principal {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:768px){
+    .barraNav{
+        padding: 10px;
+        justify-content:space-between;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: rgba(245, 240, 240, 0.521);
+    }
+    .principal{
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .principal h2 {
+        font-size: 30px;
+    }
+    footer {
+        height: 120px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (min-width:1024px){
+    header {
+    background-color: #b0d7ff9a;
+    background-image: url(../image/banner_laboratorio-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lora', serif;
+    width: 100%;
+}
+.barraNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: 20px;
+    padding: 30px;
+    border-bottom: 1px ridge white;
+    background-color: #cfcfcfda;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+    .nombre {
+    font-size: 32px;
+    font-family: 'Lora', serif;
+    letter-spacing: 3px;
+}
+    nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+}
+    nav ul li {
+    margin-left: 10px;
+}
+    li{
+    display: inline;
+    font-weight: bold;
+}
+.contenedorSection {
+    grid-template-rows: 250px;
+}
+    .principal h2 {
+        font-size: 50px;
+        color: #0657a8;
+        letter-spacing: 5px;
+        font-family: 'Lora', serif;
+}
+    section.contenedorSection {
+        margin-top: 30px;
+    }
+    footer{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding: 80px;
+    border: 2px solid #000000;
+    background-color: #0657a8;
+    text-decoration: none;
+}
+
+    footer div a
+{
+    text-decoration: none;
+}
+    footer p {
+    font-weight: bold;
+    font-size: 15px;
+}
+    p.primerParrafoM, p.segundoParrafoM {
+            background-color:rgba(79, 176, 255, 0.562);
+            font-size: 20px;
+            width: 100%;
+    }
+}
+
+
+/* pagina de contacto */
+
+
+main section.formulario
+{
+    margin-bottom: 150px;
+    }
+    
+
+section.formulario
+{
+    margin-top: 100px;
+    background-color:#9acdff91;    
+    font-size: 30px;
+    border: 5px solid #0657a8;
+    padding: 60px;
+}
+section.formulario form 
+{
+    padding: 20px;
+}
+
+/* pagina de nosotros */
+
+
+body { 
+    background-color: #e0efff
+}
+
+nav {
+    text-align: center;
+}
+.nombre{
+    font-size: 1em;
+}
+nav ul {
+    list-style-type: none;
+    font-size: 10px;
+}
+ul li{
+    display: inline;
+}
+li a {
+    text-decoration: none;
+}
+
+.barraNav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Determinamos las areas */
+
+
+header {
+    grid-area: headerC;
+}
+main {
+    grid-area: mainC;
+}
+footer{
+    grid-area: footerC;
+}
+.grillaGeneralEmpresa {
+    display: grid;
+    grid-template-areas: 
+    "headerC"
+    "mainC"
+    "footerC";
+}
+.mainNosotros{
+    margin-top: 15px;
+}
+.empresa {
+    margin-top: 10px;
+}
+.historia {
+    margin-top: 15px;
+}
+.queQueremos {
+    margin-top: 20px;
+}
+.sectionNosotros{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+@media (min-width:500px) {
+
+    header {
+    background-color: #b0d7ff9a;
+    }
+    .barraNav{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        border-bottom: 2px solid gray;
+    }
+    main.nosotros{
+        margin-top: 25px;
+    }
+    .empresa {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .historia {
+        font-size: 15px;
+    }
+    .sectionNosotros{
+        margin-top: 20px;
+    }
+    article.queQueremos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:768px) {
+    .empresa {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    article.queQueremos div{
+        margin-top: 20px;
+        
+    }
+}
+
+@media (min-width:1024px){
+    header {
+        background-color: #b0d7ff9a;
+        background-image: url(../image/banner_laboratorio-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Lora', serif;
+        width: 100%;
+        height: 335px;
+    }
+    .barraNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: 20px;
+        padding: 30px;
+        border-bottom: 1px ridge white;
+        background-color: #cfcfcfda;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+}
+    h1.empresa
+    {
+        font-family: 'Lora', serif;
+        margin-left: 20px;
+    }
+    div.historia
+    {
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    div.historia p 
+    {
+        margin-top: 25px;
+        line-height: 30px;
+        font-size: 20px;
+        margin-left: 25px; 
+    }
+
+    section.sectionNosotros
+    {
+        margin: 10px 30px;
+    }
+
+    div.mision, div.vision, div.valores
+    {
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+    section p.parrafoQueQueremos
+    {
+        font-size: 16px;
+    }
+    footer{
+        margin-top: 100px;
+        padding: 80px;
+        border: 2px solid #000000;
+        background-color: #0657a8;
+        text-decoration: none;
+    }
+    
+        footer div a
+    {
+        text-decoration: none;
+    }
+        footer p {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* pagina de productos */
+
+.productos {   
+    margin: 10px 2px;
+    width: 100%;
+    height: 700px;
+}
+
+.productos section.fondo {
+    overflow-x: hidden;
+    height: 600px;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 300px;
+    background-image: url(../image/1000_F_207026841_h1XewvlM06TbiwRLF0AH8iCGdz1m9Zdg2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
+ul.lista 
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    font-size: 24px;
+    margin-right: 600px;
+    
+}
+
+/* pagina de logistica */
+
+main h1.logistica, h2.logistica
+{
+    letter-spacing: 4px;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 0px;
+    color: #000000;
+    font-family: 'Lora', serif;
+    
+}
+
+main h2.logistica {
+    font-size: 45px;
+}
+h1.logistica {
+    font-size: 55px;
+}
+
+.logisticaParrafo
+{
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(190, 179, 179, 0.486);
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+main div.imgLogistica
+{
+    display: block;
+    margin-left: 358px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+div.conteinerLogistica
+{
+    margin-left: 25px;
+}
+
+div.conteinerLogistica div.backgroundPrimero
+{
+    background-image: url(../image/logistica2.jpg);
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+}
+
+div.conteinerLogistica div.backgroundSegundo
+{
+    background-image: url(../image/logistica4.jpg);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+.backgroundPrimero h3
+{
+    margin-left: 650px;
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p.primerParrafoL
+{
+    margin-left: 650px;
+    font-size: 16px;
+    max-width: 450px;
+    line-height: 30px;
+}
+
+
+/*
+body { background-color: #e0efff}
+*/
+/*header
+{
+    background-color: #b0d7ff9a;
+    background-image: url(../image/banner_laboratorio-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lora', serif;
+    width: 100%;
+    height: 335px;
+}
+*/
+/*.barraNav {
+    border-bottom: 1px ridge white;
+    background-color: #cfcfcfda;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+    .nombre {
+    font-size: 32px;
+    font-family: 'Lora', serif;
+    margin-left: 15px;
+    letter-spacing: 3px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+}
+nav ul{ 
+    margin-left: 850px;
+    margin-top: 10px;
+}
+li{
+    display: inline;
+    padding-left: 15px;
+    font-weight: bold;
+    
+}
+
+main {font-family:'Merriweather', serif; 
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+main h2 {
+    font-size: 50px;
+    color: #0657a8;
+    margin-left: 265px;
+    margin-top: 15px;
+    letter-spacing: 5px;
+    font-family: 'Lora', serif;
+}
+img.img1 { 
+    max-width:100%;
+    max-height: 400px;
+    margin-left: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.primerParrafoM {
+    background-color:rgba(79, 176, 255, 0.562);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 180px;
+    font-size: 20px;
+}
+img.img2
+{
+    padding: 25px;
+padding-left:240px;
+}
+.segundoParrafoM{
+    background-color: rgba(79, 176, 255, 0.562);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+
+footer
+{
+    margin-top: 100px;
+    padding: 80px;
+    border: 2px solid #000000;
+    background-color: #0657a8;
+    text-decoration: none;
+}
+
+footer div a
+{
+    text-decoration: none;
+}
+footer p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 350px;
+}
+
+
+/*
+nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(235, 235, 235, 0.363);
+    position: fixed;
+    top: 0px;
+}
+.barraNav ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.barraNav ul li
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.barraNav ul li a
+{
+    text-decoration: none;
+} */
+
