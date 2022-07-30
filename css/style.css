@@ -13,7 +13,7 @@ font-family: 'Merriweather', serif; **/
 /* APLICAMOS TRANSICION */
 
 @media (hover: hover) {
-    .transicion :hover {
+    .lista :hover {
         padding: 5px;
         border: 2px white solid;
         color: #1c6ab8;
@@ -105,7 +105,7 @@ footer a {
         flex-direction:row;
         justify-content: space-around;
         align-items: center;
-        height: 50px;
+        height: 200px;
         border-bottom: 2px solid gray;
     
     }
@@ -195,18 +195,7 @@ footer a {
     margin-left: 10px;
     font-weight: bold;
 }
-    /*nav ul li a{
-    text-decoration: none;
-    font-size: 15px;
-    color: #000000;
-}
-    nav ul li {
-    margin-left: 10px;
-}
-    li{
-    display: inline;
-    font-weight: bold;
-}*/
+
 .contenedorSection {
     grid-template-rows: 250px;
 }
@@ -358,8 +347,8 @@ footer{
         height: 50px;
         border-bottom: 2px solid gray;
     }
-    main.nosotros{
-        margin-top: 25px;
+    .mainNosotros{
+        margin-top: 60px;
     }
     .empresa {
         font-size: 25px;
@@ -576,7 +565,7 @@ p.primerParrafoL
     line-height: 30px;
 }
 
-
+/* CSS CUANDO COMENZABAMOS EL CURSO UTILIZANDO BOXMODEL*/
 /*
 body { background-color: #e0efff}
 */
