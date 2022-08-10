@@ -4,4 +4,12 @@
     box-sizing: border-box;
 }
 
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./layout/header";
+@import "./layout/footer";
 @import "./layout/mainLogistica";
+@import "./layout/mainIndex";
+@import "./layout/mainNosotros";
+@import "./layout/mainContacto";
+@import "./layout/mainProductos";

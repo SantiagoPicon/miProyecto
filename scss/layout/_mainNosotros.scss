@@ -1,0 +1,12 @@
+/* pagina de nosotros */ 
+.mainNosotros {
+    @include mobile-nosotros {
+        font-family: $ff-parrafos;
+        font-size: 20px;
+        }
+    @include tablet-nosotros {
+        font-family: $ff-parrafos;
+        font-size: 20px;
+    }
+    @include desktop-nosotros;
+}

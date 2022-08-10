@@ -1,0 +1,69 @@
+
+@mixin primer-parrafo {
+    @content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: $bg-parrafo;
+    width: 100%;
+    margin-top: 40px;
+    }
+//* BREAKPOINT NOSOTROS *//
+
+@mixin desktop-nosotros {
+    .mainNosotros {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        h1 {
+            font-family: 'lora', serif;
+            margin-left: 20px;
+            font-weight: bold;
+    }
+        .historia {
+            margin-bottom: 50px;
+            margin-left: 20px;
+            p {
+                margin-top: 25px;
+                line-height: 30px;
+                font-size: 20px;
+                margin-left: 25px;
+            }
+        }
+        .sectionNosotros {
+            margin: 10px 30px;
+            article {
+                .mision {
+                    font-family: 'lora', serif;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    }
+                .vision, .valores {
+                    @extend .mision
+                }
+                .queQueremos {
+                    font-size: 16px;
+                }
+                }
+        }
+        
+    
+}
+}
+
+
+@mixin tablet-nosotros {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile-nosotros {
+    @media screen and (min-width: 320px){
+        @content;
+    }
+    
+}
+

@@ -1,0 +1,48 @@
+@media (min-width:1024px) {
+    header{
+        background-image: url(../image/banner_laboratorio-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Lora', serif;
+        width: 100%;
+        height: 400px;
+        .barraNav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: 20px;
+            padding: 5px;
+            border-bottom: 1px ridge white;
+            background-color: #cfcfcfda;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            .flexcontainer {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                top:0px;
+                width: 100%;
+                height: 50px;
+                .nombre {
+                    font-size: 32px;
+                    font-family: 'Lora', serif;
+                    letter-spacing: 3px;
+                    color: #000000;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+                .listaNav a {
+                    font-size: 32px;
+                    font-family: 'Lora', serif;
+                    letter-spacing: 3px;
+                    color: #000000;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+

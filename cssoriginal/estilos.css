@@ -147,7 +147,7 @@ footer a {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-    }
+}
 }
 
 @media (min-width:1024px){

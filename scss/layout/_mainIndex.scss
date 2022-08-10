@@ -1,0 +1,91 @@
+@media (min-width: 1024px) {
+    main.principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+        h2 {
+            font-size: 70px;
+            letter-spacing: 4px;
+            font-family: 'Lora', serif;
+            margin-top: 50px;
+        }
+        .contenedorSection { 
+            .contenedorImg {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .primerParrafoM {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    font-weight: 500;
+                    background-color: $bg-parrafo;
+                    width: 100%;
+                margin-top: 40px;
+        } 
+    }  
+        div {
+            @extend .contenedorImg;
+            .segundoParrafoM {
+            @include primer-parrafo {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        }
+    }
+    }
+    }
+}
+    
+
+    @media (min-width:768px){
+        .principal{
+            margin-top: 60px;
+            font-size: 20px;
+            h2 {
+                font-size: 30px;
+            }
+            .contenedorSection {
+                div .primerParrafoM{
+                    background-color: $bg-parrafo;
+                    font-size: 20px;
+                    margin-top: 20px
+                }
+                div .segundoParrafoM {
+                    background-color: $bg-parrafo;
+                    font-size: 20px;
+                    margin-top: 20px
+                    }
+            }
+        }
+    
+}
+
+
+    @media (min-width: 320px) {
+        .principal {
+            font-size: 0.5em;
+            font-family: 'Lora', serif;
+            margin-top: 20px;
+            text-align: center;
+            .contenedorSection {
+                div .primerParrafoM {
+                background-color: $bg-parrafo;
+                font-size: 15px;
+                margin-top:20px;
+                width: 100%;
+                }
+                div .segundoParrafoM {
+                    background-color: $bg-parrafo;
+                    font-size: 15px;
+                    margin-top:20px;
+                    width: 100%;
+                }
+        }
+    }
+    }
