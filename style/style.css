@@ -59,24 +59,47 @@
     border: 2px solid #000000;
     background-color: #0657a8;
     text-decoration: none;
+    height: 150px;
+  }
+  footer div {
+    margin-left: 60px;
+  }
+  footer div a {
+    text-decoration: none;
+  }
+  footer p {
+    padding-left: 156px;
   }
 }
 @media (min-width: 768px) {
   footer {
-    height: 120px;
+    border: 2px solid #000000;
+    background-color: #0657a8;
+    height: 130px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
+  footer div a {
+    text-decoration: none;
+  }
 }
 @media (min-width: 320px) {
   footer {
-    height: 80px;
-    margin-bottom: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    background-color: #0657a8;
+    height: 120px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  footer div a {
+    text-decoration: none;
   }
 }
 body {
@@ -222,24 +245,6 @@ body {
     font-size: 12px;
   }
 }
-footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #0657a8;
-  height: 150px;
-  padding-left: 100px;
-}
-footer div {
-  margin-left: 60px;
-}
-footer div a {
-  text-decoration: none;
-}
-footer p {
-  padding-left: 156px;
-}
-
 @media (min-width: 1024px) {
   main.principal {
     display: grid;
@@ -247,7 +252,7 @@ footer p {
     justify-items: center;
     gap: 50px;
   }
-  main.principal h2 {
+  main.principal .titulo {
     font-size: 70px;
     letter-spacing: 4px;
     font-family: "Lora", serif;
@@ -290,7 +295,7 @@ footer p {
     margin-top: 60px;
     font-size: 20px;
   }
-  .principal h2 {
+  .principal .titulo {
     font-size: 30px;
   }
   .principal .contenedorSection div .primerParrafoM {
@@ -369,6 +374,14 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  h1.comunicate {
+    font-size: 40px;
+    font-family: "lora", serif;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
   main section.formulario {
     margin-bottom: 150px;
   }
@@ -414,7 +427,7 @@ footer p {
   main.producto {
     width: 100%;
   }
-  main.producto h1 {
+  main.producto h1.tituloProductos {
     font-size: 30px;
   }
   main.producto .listaProductos ul.lista li {

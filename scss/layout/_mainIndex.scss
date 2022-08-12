@@ -4,7 +4,7 @@
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 50px;
-        h2 {
+        .titulo {
             font-size: 70px;
             letter-spacing: 4px;
             font-family: 'Lora', serif;
@@ -47,7 +47,7 @@
         .principal{
             margin-top: 60px;
             font-size: 20px;
-            h2 {
+            .titulo {
                 font-size: 30px;
             }
             .contenedorSection {
