@@ -1,12 +1,119 @@
-/* pagina de nosotros */ 
-.mainNosotros {
-    @include mobile-nosotros {
-        font-family: $ff-parrafos;
-        font-size: 20px;
-        }
-    @include tablet-nosotros {
-        font-family: $ff-parrafos;
-        font-size: 20px;
+    @media (min-width:1024px) {
+    .mainNosotros {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        h1 {
+            font-family: 'lora', serif;
+            margin-left: 20px;
+            font-weight: bold;
     }
-    @include desktop-nosotros;
+        .historia {
+            margin-bottom: 50px;
+            margin-left: 20px;
+            p {
+                font-family:  'Merriweather', serif; 
+                margin-top: 25px;
+                line-height: 30px;
+                font-size: 20px;
+                margin-left: 25px;
+            }
+        }
+        .sectionNosotros {
+            margin: 10px 30px;
+            article {
+                .mision, .vision, .valores {
+                    font-family: $ff-parrafos;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    }
+                .pQueQueremos {
+                    font-size: 16px;
+                    margin-left: 18px;
+                    font-family: 'Merriweather', serif; 
+                }
+                }
+        }
+        
+    
 }
+}
+
+
+@media (min-width:768px){
+    .mainNosotros {   
+        margin-top: 50px;
+        margin-bottom: 50px;
+    h1 { 
+        margin-left: 25px;
+        font-family: $ff-parrafos;
+        font-weight: bold;
+    }
+    .historia {
+        p {
+            font-family: 'Merriweather', serif;
+            margin-top: 20px;
+            line-height: 25px;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .sectionNosotros {
+        margin: 20px;
+        article {
+            .mision, .vision, .valores {
+                font-family: $ff-parrafos;
+                font-size: 25px;
+                margin-bottom: 20px;
+                }
+            .pQueQueremos {
+                font-size: 16px;
+                margin-left: 18px;
+                margin-right: 18px;
+                font-family: 'Merriweather', serif; 
+            }
+            }
+    }
+}
+}
+
+@media (min-width:320px) {
+    .mainNosotros 
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    h1 { 
+        margin-left: 20px;
+        font-family: $ff-parrafos;
+        font-weight: bold;
+    }
+    .historia {
+        margin: 15px;
+        p {
+            font-family: 'Merriweather', serif;
+            margin-top: 20px;
+            line-height: 30px;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .sectionNosotros {
+        margin: 20px;
+        article {
+            .mision,.vision, .valores {
+                font-family: $ff-parrafos;
+                font-size: 25px;
+                margin-bottom: 20px;
+                }
+            .pQueQueremos {
+                font-size: 16px;
+                margin-left: 20px;
+                margin-right: 15px;
+                font-family: 'Merriweather', serif; 
+            }
+            }
+    }
+}
+}
+

@@ -22,7 +22,6 @@ body {
     margin-bottom: 40px;
     justify-content: center;
     align-items: center;
-    border: 4px solid gray;
     p {
         font-size: 22px;
         font-weight: 600;
@@ -96,7 +95,6 @@ body {
                     padding-right: 8%;
                     font-size: 15px;
                     background-color:$bg-parrafo ;
-                    border: 3px solid gray;
                 }
             }
         }
@@ -104,9 +102,9 @@ body {
             margin:10px;
             .background {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: center;
+                align-items: center;
                 margin: 10px;
                 div {
                     margin: 15px 
