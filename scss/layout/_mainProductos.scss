@@ -1,6 +1,8 @@
 @media (min-width:320px) {
-    main.producto {
+    main.productos {
         width: 100%;
+        margin-top: 30px;
+        margin-bottom: 65px;
         h1.tituloProductos {
             font-size: 30px;
         }
@@ -45,10 +47,10 @@
             margin-top: 40px;
             margin-bottom: 40px;
             padding-left: 20px;
-            .lista {
+            ul.lista {
                 list-style: none;
                 li {
-                font-size: 35px;
+                font-size: 40px;
                 margin-top:15px; 
                     &.otrosProductos {
                         a {

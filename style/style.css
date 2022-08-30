@@ -65,14 +65,8 @@ font-family: 'Merriweather', serif; **/
     text-decoration: none;
     height: 150px;
   }
-  footer div {
-    margin-left: 60px;
-  }
   footer div a {
     text-decoration: none;
-  }
-  footer p {
-    padding-left: 156px;
   }
 }
 @media (min-width: 768px) {
@@ -225,9 +219,8 @@ body {
     margin-right: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
-    overflow: hidden;
   }
   .mainLogistica .logistica {
     font-size: 15px;
@@ -235,16 +228,25 @@ body {
     width: 100%;
     text-align: center;
   }
-  .mainLogistica .imgLogistica {
-    width: 320px;
-  }
   .mainLogistica .logisticaParrafo {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    padding: 20px 15px 0px 15px;
     width: 100%;
   }
   .mainLogistica .logisticaParrafo p {
     font-size: 12px;
+  }
+  .conteinerLogistica {
+    margin: 10px;
+  }
+  .conteinerLogistica .background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+  }
+  .conteinerLogistica .background div {
+    margin: 15px;
   }
 }
 @media (min-width: 1024px) {
@@ -486,13 +488,15 @@ body {
   }
 }
 @media (min-width: 320px) {
-  main.producto {
+  main.productos {
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 65px;
   }
-  main.producto h1.tituloProductos {
+  main.productos h1.tituloProductos {
     font-size: 30px;
   }
-  main.producto .listaProductos ul.lista li {
+  main.productos .listaProductos ul.lista li {
     font-size: 15px;
     margin-top: 5px;
   }
@@ -530,18 +534,18 @@ body {
     margin-bottom: 40px;
     padding-left: 20px;
   }
-  main.productos .listaProductos .lista {
+  main.productos .listaProductos ul.lista {
     list-style: none;
   }
-  main.productos .listaProductos .lista li {
-    font-size: 35px;
+  main.productos .listaProductos ul.lista li {
+    font-size: 40px;
     margin-top: 15px;
   }
-  main.productos .listaProductos .lista li.otrosProductos a {
+  main.productos .listaProductos ul.lista li.otrosProductos a {
     text-decoration: none;
     color: #58a7fc;
   }
-  main.productos .listaProductos .lista li.otrosProductos a:hover {
+  main.productos .listaProductos ul.lista li.otrosProductos a:hover {
     color: gray;
   }
 }/*# sourceMappingURL=style.css.map */
